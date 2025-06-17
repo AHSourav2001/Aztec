@@ -43,3 +43,10 @@ Then inside the screen:
 ```
 
 This will now keep running the Aztec node and restart it automatically if it crashes.
+
+
+Sync Status Check
+
+```
+bash <(curl -s https://raw.githubusercontent.com/cerberus-node/aztec-network/refs/heads/main/sync-check.sh)
+```
