@@ -1,10 +1,11 @@
 ✅ Step 1: Create a restart script
+
 Create a script file:
-'''
+```
 nano ~/aztec-runner.sh
-'''
+```
 Paste this:
-'''
+```
 #!/bin/bash
 
 while true; do
@@ -20,25 +21,25 @@ while true; do
   echo "Aztec node crashed. Restarting in 5 seconds..."
   sleep 5
 done
-'''
+```
 Save and exit.
 
 Make it executable:
 
-'''
+```
 chmod +x ~/aztec-runner.sh
-'''
+```
 
 ✅ Step 2: Run it in a screen session
 
-''''
+```
 screen -S aztec
-'''
+```
 
 Then inside the screen:
 
-'''
+```
 ~/aztec-runner.sh
-'''
+```
 
 This will now keep running the Aztec node and restart it automatically if it crashes.
